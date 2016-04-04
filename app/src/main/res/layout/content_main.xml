@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ismael.tp2_listview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bienvenue"
+        android:id="@+id/textView_bienvenue"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Login"
+        android:id="@+id/textView_log"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/textView_bienvenue"
+        android:layout_alignStart="@+id/textView_password" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Mot de passe"
+        android:id="@+id/textView_password"
+        android:layout_below="@+id/textView_log"
+        android:layout_toStartOf="@+id/textView_bienvenue"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_login"
+        android:layout_above="@+id/textView_password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/textView_bienvenue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:layout_alignBottom="@+id/textView_password"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:id="@+id/button_connexion"
+        android:layout_below="@+id/editText_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Creer un nouveau compte"
+        android:id="@+id/textView_create"
+        android:layout_below="@+id/button_connexion"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/couleurs"
+        android:clickable="true"
+        android:selectAllOnFocus="true" />
+
+</RelativeLayout>
